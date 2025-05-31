@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLB Viewer with Skeleton</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #codeOutput {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 400px;
+      height: 90%;
+      background: rgba(0,0,0,0.8);
+      color: #0f0;
+      font-family: monospace;
+      font-size: 12px;
+      overflow: auto;
+      padding: 10px;
+      z-index: 10;
+    }
+    #fileInput {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="fileInput" accept=".glb" />
+  <pre id="codeOutput">// Mã Three.js sẽ hiển thị ở đây sau khi tải mô hình</pre>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
